@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap%27');
+body, html{
+    margin: auto;
+    padding: 0;
+    max-width: 1910px;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+}
+
+.glaven{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+
+    font-family: 'Lato', cursive;
+    color: #1d6e6e;
+}
+header h1 {
+    margin-bottom: 0;
+}
+span{
+    color: #ffffff;
+}
+
+.navbar ul {
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+a{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+}
+.ulista li{
+    font-size: 25px;
+}
+
+a:hover{
+    color: #1d6e6e;
+    transition: 0.5s;
+}
+
+.mainDiv1{
+    margin-top: -5px;
+    width: 100%;
+    display: flex;
+}
+.prvDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.podslika{
+    font-size: 32px;
+    width: 500px;
+    font-family: 'Lato', cursive;
+}
+.image1{
+    width: 55%;
+    height: auto;
+    filter: drop-shadow(.75em .75em 1em);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+.podslika{
+    text-align: center;
+}
+.image1:hover{
+    transform: scale(1.05);
+}
+
+.prvDiv{
+    width: 50%;
+}
+
+.vtorDiv{
+    padding-top: 150px;
+}
+
+.naslov{
+    font-size: 25px;
+    width: 800px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Inconsolata', monospace;*/
+}
+.lista1{
+    font-size: 30px;
+    color: #1d6e6e;
+}
+.bio{
+    margin-top: 0;
+    color: #1d6e6e;
+    font-family: 'Lato', cursive;
+}
+
+.listi{
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 10em;
+}
+.karticki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 420px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+.container .card .content{
+    position: relative;
+    margin-top:  -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.education-title{
+    text-align: center;
+    background: #282828;
+    color: #1d6e6e;
+    margin-bottom: 0;
+    padding-top:  20px;
+    font-family: 'Lato', cursive;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #282828;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    font-family: 'Lato', cursive;
+    color: white;
+}
+
+.socialmedia{
+    display: flex;
+    gap: 1em;
+}
+
+.socialmedia img{
+    width: 35px;
+}
+
+.socialmedia img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+
+/*.fa-facebook{
+    background-image: url("facebook.png");
+}
+
+.socialmedia ul li a:first-of-type{
+    background-image: url("facebook.png");
+}
+*/
